@@ -1,0 +1,9 @@
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/RealEstateApplication.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/controller/PropertyController.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/controller/UserController.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/entity/Property.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/entity/User.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/repository/PropertyRepository.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/repository/UserRepository.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/service/PropertyService.java
+/home/ubuntu/real-estate-property-marketplace/src/main/java/com/realestate/service/UserService.java
