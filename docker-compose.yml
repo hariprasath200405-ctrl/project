@@ -1,0 +1,30 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: realestate-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: realestate
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - realestate-network
+
+  app:
+    build: .
+    container_name: realestate-app
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    networks:
+      - realestate-network
+
+networks:
+  realestate-network:
+
+volumes:
+  mysql_data:
