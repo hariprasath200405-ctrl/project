@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Estate Property Marketplace</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏠 Real Estate Marketplace</h1>
+    <p>Find your perfect property</p>
+</header>
+
+<div class="container">
+
+    <!-- Add Property -->
+    <section class="form-section">
+
+        <h2>Add Property</h2>
+
+        <form id="propertyForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Property Title"
+                required
+            >
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Location"
+                required
+            >
+
+            <input
+                type="text"
+                id="propertyType"
+                placeholder="Property Type (Apartment, Villa, House)"
+                required
+            >
+
+            <input
+                type="text"
+                id="listingType"
+                placeholder="Listing Type (Sale, Rent)"
+                required
+            >
+
+            <input
+                type="number"
+                id="price"
+                placeholder="Price"
+                required
+            >
+
+            <input
+                type="number"
+                id="bedrooms"
+                placeholder="Bedrooms"
+                required
+            >
+
+            <input
+                type="number"
+                id="bathrooms"
+                placeholder="Bathrooms"
+                required
+            >
+
+            <input
+                type="number"
+                id="area"
+                placeholder="Area in sq.ft"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Property Description"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Add Property
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Available Properties -->
+    <section>
+
+        <h2>Available Properties</h2>
+
+        <button onclick="loadProperties()">
+            Refresh Properties
+        </button>
+
+        <div id="propertyList"></div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

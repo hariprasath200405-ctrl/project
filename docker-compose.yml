@@ -2,7 +2,6 @@ services:
 
   mysql:
     image: mysql:8.0
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: realestate
@@ -13,7 +12,6 @@ services:
 
   app:
     build: .
-    restart: always
     depends_on:
       - mysql
     ports:
@@ -21,8 +19,20 @@ services:
     networks:
       - realestate-network
 
-networks:
-  realestate-network:
+  frontend:
+    build: ./frontend
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+    networks:
+      - realestate-network
+
 
 volumes:
   mysql_data:
+
+
+networks:
+  realestate-network:
+    driver: bridge
