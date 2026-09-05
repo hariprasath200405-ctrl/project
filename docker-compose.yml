@@ -2,7 +2,6 @@ services:
 
   mysql:
     image: mysql:8.0
-    container_name: realestate-mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -14,7 +13,6 @@ services:
 
   app:
     build: .
-    container_name: realestate-app
     restart: always
     depends_on:
       - mysql
