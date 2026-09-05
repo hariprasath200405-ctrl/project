@@ -1,9 +1,0 @@
-com/realestate/entity/Property.class
-com/realestate/service/PropertyService.class
-com/realestate/controller/UserController.class
-com/realestate/repository/PropertyRepository.class
-com/realestate/RealEstateApplication.class
-com/realestate/controller/PropertyController.class
-com/realestate/service/UserService.class
-com/realestate/repository/UserRepository.class
-com/realestate/entity/User.class
